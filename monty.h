@@ -72,13 +72,16 @@ void _swap(stack_t **head, unsigned int line_num);
 void _add(stack_t **head, unsigned int line_num);
 void _nop(stack_t **head, unsigned int line_num);
 void _sub(stack_t **head, unsigned int line_num);
+void _div(stack_t **head, unsigned int line_num);
+void _mul(stack_t **head, unsigned int line_num);
+void _mod(stack_t **head, unsigned int line_num);
 
 void (*get_opcodes(char *opc))(stack_t **stack, unsigned int line_number);
 
 int _sch(char *s, char c);
 char *_strtoky(char *s, char *d);
-void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
-void *_calloc(unsigned int nmemb, unsigned int size);
+/*void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
+void *_calloc(unsigned int nmemb, unsigned int size);*/
 int _strcmp(char *s1, char *s2);
 
 stack_t *add_dnodeint_end(stack_t **head, const int n);
