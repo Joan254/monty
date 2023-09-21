@@ -71,6 +71,7 @@ void _pop(stack_t **head, unsigned int line_num);
 void _swap(stack_t **head, unsigned int line_num);
 void _add(stack_t **head, unsigned int line_num);
 void _nop(stack_t **head, unsigned int line_num);
+void _sub(stack_t **head, unsigned int line_num);
 
 void (*get_opcodes(char *opc))(stack_t **stack, unsigned int line_number);
 
